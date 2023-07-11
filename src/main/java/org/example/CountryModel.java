@@ -1,8 +1,16 @@
 package org.example;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.ObjectCodec;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.ObjectMapper;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
+import com.mashape.unirest.request.GetRequest;
+import org.json.JSONObject;
 
 import java.util.List;
 
@@ -12,7 +20,7 @@ public class CountryModel { // נהוג לכתוב מודל לגקסונים
     private String alpha2Code;
     private String alpha3Code;
     private List<String> latlng;
-   
+
 
     public List<String> getLatlng() {
         return latlng;

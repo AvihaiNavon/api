@@ -59,9 +59,9 @@ public class Main {
             for (CountryModel countryModel1:countryModel){
                 System.out.println(countryModel1.getLatlng());
             }
-            for (CountryModel countryModel1:countryModel){
-                System.out.println(countryModel1.getCurrencies());
-            }
+
+            CatFactModel.catFactModel();// שיטת חילוץ של דוד
+
 
         } catch (UnirestException e) {
             throw new RuntimeException(e);
