@@ -20,7 +20,11 @@ public class CountryModel { // נהוג לכתוב מודל לגקסונים
     private String alpha2Code;
     private String alpha3Code;
     private List<String> latlng;
+    private List<String> borders;
 
+    public List<String> getBorders() {
+        return borders;
+    }
 
     public List<String> getLatlng() {
         return latlng;

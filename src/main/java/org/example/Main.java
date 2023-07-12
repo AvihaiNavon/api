@@ -59,6 +59,17 @@ public class Main {
             for (CountryModel countryModel1:countryModel){
                 System.out.println(countryModel1.getLatlng());
             }
+            List<String>country=null;
+            for (CountryModel countryModel1:countryModel){
+                System.out.println(countryModel1.getBorders());
+                country=countryModel1.getBorders();
+            }
+
+
+
+
+
+
 
             CatFactModel.catFactModel();// שיטת חילוץ של דוד
 
